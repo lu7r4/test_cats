@@ -1,0 +1,302 @@
+@font-face {
+    font-family: "Yanone", sans-serif;
+    src:url(../fonts/YanoneKaffeesatz-Medium.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+i.fa {
+    font-style: 30px;
+    margin-right: 10px;
+}
+/* animation */
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.main {
+    background-image: url(../img/backgraund.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: slide 90s linear infinite;
+}
+/*стили элементов*/
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.app__header {
+    background-color: rgba(0,0,0,.5);
+    border-bottom: 7px solid #fdb54d;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+.app__header-title {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.app__logo {
+    padding: 20px 0;
+    display: block;
+    width: 200px;
+    
+    margin: 0 auto;
+}
+.app__body {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+}
+.app__btn {
+    padding: 1px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    width: 240px;
+    border: 5px solid rgba(1,88,154,.5);
+    background-color: rgba(25,121,211,.8);
+    margin: 10px auto;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+
+}
+
+/*достижения*/
+.achivments, .app__body {
+    max-height: 100vh;
+    justify-content: flex-start;
+}
+.app__body-inner {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.app__body-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 20px 0;
+}
+.app__body-top {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: max-content max-content;
+    place-content: center center;
+    margin-bottom: 20px;
+}
+.app__card {
+    background-color: rgba(0,0,0,.5);
+    padding: 20px 10px;
+    border: 5px solid rgba(1,88,154,.5);
+    text-align: center;
+}
+.app__card:nth-child(1) {
+    border-right: none;
+    border-bottom: none;
+}
+.app__card:nth-child(2) {
+    border-left: none;
+    border-bottom: none;
+}
+.app__card:nth-child(3) {
+    border-right: none;
+    border-top: none;
+}
+.app__card:nth-child(4) {
+    border-left: none;
+    border-top: none;
+}
+.app__card-text {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.app__card-count {
+    font-size: 18px;
+}
+.app__body-midle {
+    margin-bottom: 15px;
+}
+.app_result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border: 5px solid rgba(1,88,154,.5);
+    background-color: rgba(25,121,211,.8);
+    margin-bottom: 7px;
+}
+.app_result:last-child {
+    margin-bottom: none;
+}
+i.fa-star {
+    margin-right: 0;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.app__result-name {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.app__result-amout {
+    font-size: 18px;
+}
+.btn__back {
+    width: 70px;
+    height: 70px;
+    box-shadow: none;
+    border-radius: 50%;
+}
+.btn_achivment {
+    background-color: rgba(0,0,0,.5);
+    border: 5px solid rgba(1,88,154,.5);
+}
+/*Экран с вопросами*/
+.app__header-inner {
+    color: #fff;
+    text-align: center;
+}
+.app__count {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.app__text {
+    font-size: 24px;
+}
+/*Результаты*/
+.results .app__body {
+    justify-content: center;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.737); 
+}
+.app__results-inner {
+    color: rgb(8, 0, 4);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.263);
+    padding: 20px;
+  
+   
+}
+.results__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.results__img {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.results__img img {
+    max-height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.results__text-box {
+    margin: 0 auto;
+    width: 300px;
+    font-size: 20px;
+    line-height: 20px;
+}
+.results__text {
+    margin-bottom: 20px;
+}
+.app.results {
+    animation: none;
+    background-size: cover;
+    background-position: center center;
+}
+/*очистка локального хранилища*/
+
+.btn_remove {
+    width: 100%;
+    border-radius: 20px;
+}
+/*фон и кнопки*/
+/* 
+.app.results[data-race="abisin"] {
+    background-image: url(../img/abisin_bg.png);
+    background-size: cover;
+}
+.app.results[data-race="british"] {
+    background-image: url(../img/british_bg.png);
+    background-size: cover;
+}
+.app.results[data-race="maincun"] {
+    background-image: url(../img/mainkun_bg.png);
+    background-size: cover;
+}
+.app.results[data-race="oriental"] {
+    background-image: url(../img/oriental_bg.png);
+    background-size: cover;
+}
+.app.results[data-race="siamka"] {
+    background-image: url(../img/siamka_bg.png);
+    background-size: cover;
+}
+.app.results[data-race="american"] {
+    background-image: url(../img/american_bg.png);
+    background-size: cover;
+    background-position: 40% 0;
+}
+.app.results[data-race="yard"] {
+    background-image: url(../img/yard_bg.png);
+    background-size: cover;
+    background-position: 45% 0;
+}
+.btn__zerg {
+    background-color: #762877;
+}
+.btn__primal {
+    background-color: #56a725;
+}
+.btn__protoss {
+    background-color: #fce356;
+    color: #000;
+}
+.btn__taldarim {
+    background-color: #9d0101;
+}
+.btn__terran {
+    background-color: #da8618;
+}
+.btn__infested {
+    background-color: #f5b673;
+    color: #000;
+}
+.btn__hybrid {
+    background-color: #fc7654;
+}
+.results__text-box .results__quote {
+    text-align: left;
+    
+}*/
